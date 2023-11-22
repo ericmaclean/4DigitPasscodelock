@@ -1,1 +1,1 @@
-# 4DigitPasscodelock
+This project utilizes an ice40HX1K FPGA board which features 4 push buttons and a 2 digit 7 segment display. The 1st and 3rd pushbutton are used to toggle and select digits 0-9. There are 4 LEDs on the board which allow the user to know what digit they are on. After 4 digits have been selected, the LEDs will flash and a Y or N will be shown on the 7 Segment display. A servo module has not been added yet, but may in the future to allow control of deadbolt for a full 4 digit combination lock use. 
