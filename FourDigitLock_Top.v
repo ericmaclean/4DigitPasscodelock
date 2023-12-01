@@ -21,7 +21,8 @@ module FourDigitLock_Top
 	output o_Segment1_D,
 	output o_Segment1_E,
 	output o_Segment1_F,
-	output o_Segment1_G
+	output o_Segment1_G, 
+	output io_PMOD_4
 	);
 	
 	wire w_Switch_1;
@@ -120,6 +121,11 @@ assign o_Segment1_D = ~w_Segment1_D;
 assign o_Segment1_E = ~w_Segment1_E;
 assign o_Segment1_F = ~w_Segment1_F;
 assign o_Segment1_G = ~w_Segment1_G;
+
+	Servo_Lock 
+	(.i_Clk(i_Clk), 
+	.Answer(w_Answer[2:0]),
+	.io_PMOD_4(io_PMOD_4));
 
 endmodule //FourDigitLock_Top
 	
